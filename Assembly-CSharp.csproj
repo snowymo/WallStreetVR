@@ -50,8 +50,6 @@
      <Compile Include="Assets\CityWalk\Scripts\Audio\SoundManager.cs" />
      <Compile Include="Assets\CityWalk\Scripts\Audio\SoundTriggerByScript.cs" />
      <Compile Include="Assets\CityWalk\Scripts\CameraLayerBasedCulling.cs" />
-     <Compile Include="Assets\CityWalk\Scripts\CameraNearPlaneHeightBased.cs" />
-     <Compile Include="Assets\CityWalk\Scripts\CitywalkCameraController.cs" />
      <Compile Include="Assets\CityWalk\Scripts\CitywalkCameraPreviewBehavior.cs" />
      <Compile Include="Assets\CityWalk\Scripts\ControllerVibrateBehavior.cs" />
      <Compile Include="Assets\CityWalk\Scripts\DLCManager.cs" />
@@ -65,21 +63,9 @@
      <Compile Include="Assets\CityWalk\Scripts\DynamicCityLoader\LoadingSplash.cs" />
      <Compile Include="Assets\CityWalk\Scripts\DynamicCityLoader\StaticBatchingRecover.cs" />
      <Compile Include="Assets\CityWalk\Scripts\DynamicCityLoader\StaticCitySceneLoader.cs" />
-     <Compile Include="Assets\CityWalk\Scripts\Environment\TimeOfDayController.cs" />
-     <Compile Include="Assets\CityWalk\Scripts\FlyingController.cs" />
-     <Compile Include="Assets\CityWalk\Scripts\GameModeManager.cs" />
      <Compile Include="Assets\CityWalk\Scripts\GeodeticConverter.cs" />
-     <Compile Include="Assets\CityWalk\Scripts\Internal\PlayerSpaceRecorder.cs" />
      <Compile Include="Assets\CityWalk\Scripts\JetFlame.cs" />
-     <Compile Include="Assets\CityWalk\Scripts\Menu\DLCCityMenuItem.cs" />
-     <Compile Include="Assets\CityWalk\Scripts\Menu\FlyingModeMenuItem.cs" />
-     <Compile Include="Assets\CityWalk\Scripts\Menu\MenuController.cs" />
-     <Compile Include="Assets\CityWalk\Scripts\Menu\ToggleGuideMenuItem.cs" />
-     <Compile Include="Assets\CityWalk\Scripts\Opening\OpeningController.cs" />
-     <Compile Include="Assets\CityWalk\Scripts\Opening\VisibilityTimeCounter.cs" />
      <Compile Include="Assets\CityWalk\Scripts\SkywandDisabler.cs" />
-     <Compile Include="Assets\CityWalk\Scripts\TrackingSpaceController.cs" />
-     <Compile Include="Assets\CityWalk\Scripts\UnityAnalytics.cs" />
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>

@@ -3,7 +3,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using AssetBundles;
+//using AssetBundles;
 
 [Obsolete("Not supported yet. Use StaticCitySceneLoader")]
 public class DynamicCityLoader : MonoBehaviour {

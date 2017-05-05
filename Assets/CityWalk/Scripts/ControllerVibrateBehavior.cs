@@ -6,13 +6,13 @@ public class ControllerVibrateBehavior : MonoBehaviour
 {
     public int MaxVibrateCount = 10;
 
-    private SteamVR_TrackedController trackedController;
+//    private SteamVR_TrackedController trackedController;
 
     private int vibrateCount = 0;
 
     void Start()
     {
-        trackedController = GetComponentInParent<SteamVR_TrackedController>();
+//        trackedController = GetComponentInParent<SteamVR_TrackedController>();
     }
 
     void OnTriggerEnter(Collider other) {
@@ -35,17 +35,17 @@ public class ControllerVibrateBehavior : MonoBehaviour
     /// <param name="strength">vibration strength from 0-1</param>
     private IEnumerator longVibrate(float length, float strength)
     {
-        var device = SteamVR_Controller.Input((int)(trackedController.controllerIndex));
+//        var device = SteamVR_Controller.Input((int)(trackedController.controllerIndex));
         for (float i = 0; i < length; i += Time.deltaTime)
         {
-            device.TriggerHapticPulse((ushort)Mathf.Lerp(0, 3999, strength));
+            //device.TriggerHapticPulse((ushort)Mathf.Lerp(0, 3999, strength));
             yield return null;
         }
     }
 
     private void pulseVibrate()
     {
-        var device = SteamVR_Controller.Input((int)(trackedController.controllerIndex));
-        device.TriggerHapticPulse(3999);
+//        var device = SteamVR_Controller.Input((int)(trackedController.controllerIndex));
+//        device.TriggerHapticPulse(3999);
     }
 }

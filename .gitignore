@@ -1,1 +1,5 @@
+Library/
+Library/*/*/*.info
+Library/*/*/*
+Temp/
 Assets/CityWalk/P4Cities/

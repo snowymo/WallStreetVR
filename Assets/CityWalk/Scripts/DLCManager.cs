@@ -94,7 +94,8 @@ public class DLCCity
     }
 }
 
-public class DLCManager : Singleton<DLCManager>
+public class DLCManager 
+	//: Singleton<DLCManager>
 {
     public enum DLCState
     {
@@ -125,7 +126,7 @@ public class DLCManager : Singleton<DLCManager>
 
     void Start()
     {
-        StartCoroutine(loadManifestAsync());
+//        StartCoroutine(loadManifestAsync());
     } 
 
     #region Bundle Management
@@ -172,12 +173,12 @@ public class DLCManager : Singleton<DLCManager>
 
     public DLCState GetDLCState(DLCCity city)
     {
-        if (!SteamManager.Initialized)
+/*        if (!SteamManager.Initialized)
         {
             Debug.LogError("DLC State invalid since Steam is not initialized. ");
             return DLCState.Invalid;
         }
-
+*/ 
         // TODO: Check Steam status
 
         // Check file exists

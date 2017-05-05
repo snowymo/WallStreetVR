@@ -16,11 +16,11 @@ namespace CitySceneLoader {
         internal static extern void VULBICVIOO(ulong dataPtr, int len);
 #else
     internal void encrypt(byte[] data, int len) {
-        throw new NotImplementedException(" plugin not supported on current platform");
+//        throw new NotImplementedException(" plugin not supported on current platform");
     }
 
     internal void decrypt(byte[] data, int len) {
-        throw new NotImplementedException(" plugin not supported on current platform");
+  //      throw new NotImplementedException(" plugin not supported on current platform");
     }
 #endif
     }

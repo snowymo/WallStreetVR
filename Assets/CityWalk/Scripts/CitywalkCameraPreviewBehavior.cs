@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-using TMPro;
+//using TMPro;
 
 public class CitywalkCameraPreviewBehavior : MonoBehaviour {
 
@@ -12,21 +12,21 @@ public class CitywalkCameraPreviewBehavior : MonoBehaviour {
     public float GroundDuration = 2;
     public float TorqueRange = 5;
 
-    private TextMeshPro savedLocationText;
+    //private TextMeshPro savedLocationText;
 
     void Start()
     {
         StartCoroutine(delayedFall());
 
-        savedLocationText = GetComponentInChildren<TextMeshPro>();
+        //savedLocationText = GetComponentInChildren<TextMeshPro>();
 
-        bool tutorialEnabled = (folderTextDisplayedTimes < MAX_FOLDER_TEXT_TIMES) && GameModeManager.Instance.TutorialEnabled;
+        //bool tutorialEnabled = (folderTextDisplayedTimes < MAX_FOLDER_TEXT_TIMES) && GameModeManager.Instance.TutorialEnabled;
 
-        savedLocationText.gameObject.SetActive(tutorialEnabled);
+        //savedLocationText.gameObject.SetActive(tutorialEnabled);
 
-        if (tutorialEnabled) {
-            folderTextDisplayedTimes++;
-        }
+        //if (tutorialEnabled) {
+        //    folderTextDisplayedTimes++;
+        //}
     }
 
     public void OnCollisionEnter(Collision collision) {
@@ -37,7 +37,7 @@ public class CitywalkCameraPreviewBehavior : MonoBehaviour {
     {
         yield return new WaitForSeconds(StayTime);
 
-        Destroy(savedLocationText.gameObject);
+//        Destroy(savedLocationText.gameObject);
 
         Rigidbody rigidBody = GetComponent<Rigidbody>();
         rigidBody.isKinematic = false;

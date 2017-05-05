@@ -45,7 +45,7 @@ namespace CitySceneLoader {
         }
 
         internal void Update() {
-            if (!SteamManager.Initialized) {
+/*            if (!SteamManager.Initialized) {
                 return;
             }
 
@@ -65,6 +65,7 @@ namespace CitySceneLoader {
 
                 LoadCity(cityToLoad);
             }
+            */
         }
 
         internal void LoadCity(DLCCity city) {
@@ -124,8 +125,8 @@ namespace CitySceneLoader {
             List<string> plainBundlesToLoad = new List<string>();
             List<string> encryptedBundlesToLoad = new List<string>();
 
-            string[] dependencies = DLCManager.Instance.GetCityDependencies(city);
-            for (int i = 0; i < dependencies.Length; i++) {
+//            string[] dependencies = DLCManager.Instance.GetCityDependencies(city);
+/*            for (int i = 0; i < dependencies.Length; i++) {
                 string bundleName = dependencies[i];
                 if (IsEncrypted(bundleName)) {
                     encryptedBundlesToLoad.Add(bundleName);
@@ -133,7 +134,7 @@ namespace CitySceneLoader {
                     plainBundlesToLoad.Add(bundleName);
                 }
             }
-
+*/
             if (IsEncrypted(city.RootBundleFileName)) {
                 encryptedBundlesToLoad.Add(city.RootBundleFileName);
             } else {
@@ -202,11 +203,12 @@ namespace CitySceneLoader {
         }
 
         private void decrypt(byte[] rawData) {
-            unsafe {
+			// hehe
+            /*unsafe {
                 fixed (byte* rawDataPtr = rawData) {
                     CityVRUtilsWrapper.VULBICVIOO((ulong)rawDataPtr, rawData.Length);
                 }
-            }
+            }*/
         }
 
         internal static bool IsEncrypted(string bundleName) {

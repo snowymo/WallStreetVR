@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 
-public class SoundManager : Singleton<SoundManager> {
+public class SoundManager
+//	: Singleton<SoundManager> 
+{
     [Header("Player Height")] 
     public float PlayerHeightMaxSpeed = 200;
     public float PlayerHeightCatchUpRatio = 0.8f;
@@ -28,7 +30,7 @@ public class SoundManager : Singleton<SoundManager> {
                 PlayerHeightCatchUpRatio);
         }
 
-	    AkSoundEngine.SetRTPCValue("PlayerHeight", DelayedPlayerHeight);
+//	    AkSoundEngine.SetRTPCValue("PlayerHeight", DelayedPlayerHeight);
     }
 
     public void UpdateHourOfDay(float hourOfDay) {
@@ -57,7 +59,7 @@ public class SoundManager : Singleton<SoundManager> {
                 DelayedHourOfDay += 24;
             }
 
-            AkSoundEngine.SetRTPCValue("HourOfDay", DelayedHourOfDay);
+//            AkSoundEngine.SetRTPCValue("HourOfDay", DelayedHourOfDay);
         }
     }
 
@@ -67,4 +69,4 @@ public class SoundManager : Singleton<SoundManager> {
         delta = Mathf.Clamp(delta, -maxDelta, maxDelta);
         return currentValue + delta;
     }
-} 
+}

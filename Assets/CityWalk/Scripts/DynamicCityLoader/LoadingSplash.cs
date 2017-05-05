@@ -9,8 +9,8 @@ public class LoadingSplash : MonoBehaviour {
 	{
 	    Sprite sprite = null;
 
-	    DLCCity city = SceneSwitcher.Instance.CityToLoad;
-	    if (city != null)
+//	    DLCCity city = SceneSwitcher.Instance.CityToLoad;
+/*	    if (city != null)
 	    {
 	        string splashName = string.Format("{0}_loading", city.BundleName);
 	        sprite = Resources.Load<Sprite>(splashName);
@@ -21,7 +21,7 @@ public class LoadingSplash : MonoBehaviour {
 	            text.gameObject.SetActive(false);
 	        }
 	    }
-
+*/
 	    if (sprite == null)
 	    {
 	        // fallback
@@ -31,7 +31,7 @@ public class LoadingSplash : MonoBehaviour {
 	        Text text = GetComponentInChildren<Text>(true);
 	        if (text != null)
 	        {
-	            if (city != null)
+/*	            if (city != null)
 	            {
 	                text.text = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(city.BundleName.Replace("_", " "));
 	                text.gameObject.SetActive(true);
@@ -40,6 +40,7 @@ public class LoadingSplash : MonoBehaviour {
 	            {
 	                text.gameObject.SetActive(false);
 	            }
+	            */
 	        }
 	    }
 
