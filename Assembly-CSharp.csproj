@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Google-Unity\Scripts\AndroidHelper.cs" />
      <Compile Include="Assets\Google-Unity\Scripts\AndroidLifecycle.cs" />
+     <Compile Include="Assets\Scripts\BrushCtrl.cs" />
      <Compile Include="Assets\Scripts\BuildingTrigger.cs" />
      <Compile Include="Assets\Scripts\SprayerCtrl.cs" />
      <Compile Include="Assets\TangoPrefabs\Scripts\ARCameraPostProcess.cs" />
