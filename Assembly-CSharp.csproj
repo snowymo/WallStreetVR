@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{8931A59B-10A0-8D71-D9A7-E2F3F923E2F5}</ProjectGuid>
+    <ProjectGuid>{6F490145-C451-31D7-748F-32C3CB53163B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -19,7 +19,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_1;UNITY_5_5;UNITY_5;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_VIDEO;ENABLE_VR;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;UNITY_TEAM_LICENSE</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_1;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_ANDROID;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VIDEO;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;UNITY_TEAM_LICENSE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -46,26 +46,80 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CityWalk\Scripts\Audio\DelayedLerpValue.cs" />
-     <Compile Include="Assets\CityWalk\Scripts\Audio\SoundManager.cs" />
-     <Compile Include="Assets\CityWalk\Scripts\Audio\SoundTriggerByScript.cs" />
-     <Compile Include="Assets\CityWalk\Scripts\CameraLayerBasedCulling.cs" />
-     <Compile Include="Assets\CityWalk\Scripts\CitywalkCameraPreviewBehavior.cs" />
-     <Compile Include="Assets\CityWalk\Scripts\ControllerVibrateBehavior.cs" />
-     <Compile Include="Assets\CityWalk\Scripts\DLCManager.cs" />
-     <Compile Include="Assets\CityWalk\Scripts\DataViz\FlightLine.cs" />
-     <Compile Include="Assets\CityWalk\Scripts\DataViz\FlightLineLoader.cs" />
-     <Compile Include="Assets\CityWalk\Scripts\DataViz\LineGenerator.cs" />
-     <Compile Include="Assets\CityWalk\Scripts\DataViz\WorldTime.cs" />
-     <Compile Include="Assets\CityWalk\Scripts\DynamicCityLoader\CityVRUtilsWrapper.cs" />
-     <Compile Include="Assets\CityWalk\Scripts\DynamicCityLoader\DynamicCityLoader.cs" />
-     <Compile Include="Assets\CityWalk\Scripts\DynamicCityLoader\LoadingProgress.cs" />
-     <Compile Include="Assets\CityWalk\Scripts\DynamicCityLoader\LoadingSplash.cs" />
-     <Compile Include="Assets\CityWalk\Scripts\DynamicCityLoader\StaticBatchingRecover.cs" />
-     <Compile Include="Assets\CityWalk\Scripts\DynamicCityLoader\StaticCitySceneLoader.cs" />
-     <Compile Include="Assets\CityWalk\Scripts\GeodeticConverter.cs" />
-     <Compile Include="Assets\CityWalk\Scripts\JetFlame.cs" />
-     <Compile Include="Assets\CityWalk\Scripts\SkywandDisabler.cs" />
+     <Compile Include="Assets\Google-Unity\Scripts\AndroidHelper.cs" />
+     <Compile Include="Assets\Google-Unity\Scripts\AndroidLifecycle.cs" />
+     <Compile Include="Assets\SprayerCtrl.cs" />
+     <Compile Include="Assets\TangoPrefabs\Scripts\ARCameraPostProcess.cs" />
+     <Compile Include="Assets\TangoPrefabs\Scripts\TangoARPoseController.cs" />
+     <Compile Include="Assets\TangoPrefabs\Scripts\TangoARScreen.cs" />
+     <Compile Include="Assets\TangoPrefabs\Scripts\TangoDeltaPoseController.cs" />
+     <Compile Include="Assets\TangoPrefabs\Scripts\TangoEnvironmentalLighting.cs" />
+     <Compile Include="Assets\TangoPrefabs\Scripts\TangoGestureCamera.cs" />
+     <Compile Include="Assets\TangoPrefabs\Scripts\TangoMultiCamera.cs" />
+     <Compile Include="Assets\TangoPrefabs\Scripts\TangoPointCloud.cs" />
+     <Compile Include="Assets\TangoPrefabs\Scripts\TangoPointCloudFloor.cs" />
+     <Compile Include="Assets\TangoPrefabs\Scripts\TangoPoseController.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\Common\Common.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\Common\DMatrix4x4.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\Common\DVector3.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\Common\DVector4.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\Common\OrientationManager.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\Common\PublicForTesting.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\Common\TangoAndroidHelper.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\Common\TangoEnums.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\Common\TangoExtensions.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\Common\TangoTypes.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\Interfaces\IExperimentalTangoVideoOverlay.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\Interfaces\ITango3DReconstruction.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\Interfaces\ITangoAreaDescriptionEvent.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\Interfaces\ITangoCameraTexture.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\Interfaces\ITangoDepth.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\Interfaces\ITangoDepthMultithreaded.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\Interfaces\ITangoEvent.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\Interfaces\ITangoEventMultithreaded.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\Interfaces\ITangoLifecycle.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\Interfaces\ITangoPointCloud.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\Interfaces\ITangoPointCloudMultithreaded.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\Interfaces\ITangoPose.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\Interfaces\ITangoVideoOverlay.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\Interfaces\ITangoVideoOverlayMultithreaded.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\Listeners\AreaDescriptionEventListener.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\Listeners\DepthListener.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\Listeners\PoseListener.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\Listeners\TangoEventListener.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\Listeners\VideoOverlayListener.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\TangoWrappers\AreaDescription.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\TangoWrappers\DepthProvider.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\TangoWrappers\EmulationHelpers\EmulatedAreaDescriptionHelper.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\TangoWrappers\EmulationHelpers\EmulatedEnvironmentRenderHelper.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\TangoWrappers\PoseProvider.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\TangoWrappers\Tango3DReconstruction.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\TangoWrappers\TangoApplication.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\TangoWrappers\TangoConfig.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\TangoWrappers\TangoEventProvider.cs" />
+     <Compile Include="Assets\TangoSDK\Core\Scripts\TangoWrappers\VideoOverlayProvider.cs" />
+     <Compile Include="Assets\TangoSDK\TangoSupport\Scripts\TangoSupport.cs" />
+     <Compile Include="Assets\TangoSDK\TangoUX\Scripts\Common\AndroidHelper.cs" />
+     <Compile Include="Assets\TangoSDK\TangoUX\Scripts\Common\TangoUxEnums.cs" />
+     <Compile Include="Assets\TangoSDK\TangoUX\Scripts\Common\TangoUxTypes.cs" />
+     <Compile Include="Assets\TangoSDK\TangoUX\Scripts\Interfaces\ITangoUX.cs" />
+     <Compile Include="Assets\TangoSDK\TangoUX\Scripts\Interfaces\ITangoUXMultithreaded.cs" />
+     <Compile Include="Assets\TangoSDK\TangoUX\Scripts\Listeners\UxExceptionEventListener.cs" />
+     <Compile Include="Assets\TangoSDK\TangoUX\Scripts\TangoUx.cs" />
+     <None Include="Assets\TangoPrefabs\Shaders\TangoEnvironmentalLighting\EnvironmentalLightingStandard.shader" />
+     <None Include="Assets\TangoPrefabs\Shaders\PointCloud.shader" />
+     <None Include="Assets\TangoSDK\Core\Shaders\RGB_ARScreen.shader" />
+     <None Include="Assets\TangoPrefabs\Shaders\YUV2RGB.shader" />
+     <None Include="Assets\TangoSDK\Core\Shaders\RGB2YUV_CbCr.shader" />
+     <None Include="Assets\TangoPrefabs\Shaders\ARPostProcess.shader" />
+     <None Include="Assets\TangoPrefabs\Shaders\TangoEnvironmentalLighting\EnvironmentalLightingSpecularBumped.shader" />
+     <None Include="Assets\TangoPrefabs\Shaders\TangoEnvironmentalLighting\TangoEnvironmentalLighting.cginc" />
+     <None Include="Assets\TangoSDK\Core\Shaders\DepthEmulation.shader" />
+     <None Include="Assets\TangoSDK\Core\Shaders\RGB2YUV_Y.shader" />
+     <None Include="Assets\TangoSDK\Core\Shaders\ColorCameraEmulation.shader" />
+     <None Include="Assets\TangoPrefabs\Shaders\PointCloud_Occlusion.shader" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\TangoPrefabs\Shaders\TangoEnvironmentalLighting\EnvironmentalLightingDiffuse.shader" />
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
@@ -84,6 +138,10 @@
  <Reference Include="UnityEngine.VR">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{5FD5E29A-290C-04D5-8577-C8E1742C55D5}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WallStreetVR", "Assembly-CSharp-firstpass.csproj", "{5FD5E29A-290C-04D5-8577-C8E1742C55D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WallStreetVR", "Assembly-CSharp.csproj", "{6F490145-C451-31D7-748F-32C3CB53163B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WallStreetVR", "Assembly-CSharp-Editor.csproj", "{D701B260-35E0-755C-5749-380AF6989A79}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5FD5E29A-290C-04D5-8577-C8E1742C55D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FD5E29A-290C-04D5-8577-C8E1742C55D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FD5E29A-290C-04D5-8577-C8E1742C55D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FD5E29A-290C-04D5-8577-C8E1742C55D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F490145-C451-31D7-748F-32C3CB53163B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F490145-C451-31D7-748F-32C3CB53163B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F490145-C451-31D7-748F-32C3CB53163B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F490145-C451-31D7-748F-32C3CB53163B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D701B260-35E0-755C-5749-380AF6989A79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D701B260-35E0-755C-5749-380AF6989A79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D701B260-35E0-755C-5749-380AF6989A79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D701B260-35E0-755C-5749-380AF6989A79}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
