@@ -13,20 +13,29 @@ public class SprayerCtrl : MonoBehaviour {
 	// the trigger conditions each frame.
 	List<ParticleSystem.Particle> enter = new List<ParticleSystem.Particle>();
 	List<ParticleSystem.Particle> exit = new List<ParticleSystem.Particle>();
+	bool isPaint = false;
 
+	public void Paint(){
+		isPaint = true;
+	}
 
     void Start()
     {
         part = GetComponent<ParticleSystem>();
         part.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
         collisionEvents = new List<ParticleCollisionEvent>();
+
     }
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+		if (Input.GetKeyDown (KeyCode.Space)) {
+			isPaint = true;
+		}
+		if(isPaint)
         {
             // start
+			isPaint = false;
             part.Play();
             StartCoroutine(wait());
         }
