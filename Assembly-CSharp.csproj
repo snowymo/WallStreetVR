@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\BrushCtrl.cs" />
      <Compile Include="Assets\Scripts\BuildingTrigger.cs" />
      <Compile Include="Assets\Scripts\SprayerCtrl.cs" />
+     <Compile Include="Assets\Scripts\changePos.cs" />
      <Compile Include="Assets\TangoPrefabs\Scripts\ARCameraPostProcess.cs" />
      <Compile Include="Assets\TangoPrefabs\Scripts\TangoARPoseController.cs" />
      <Compile Include="Assets\TangoPrefabs\Scripts\TangoARScreen.cs" />
