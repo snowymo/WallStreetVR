@@ -31,7 +31,7 @@ public class SprayerCtrl : MonoBehaviour {
         part = GetComponent<ParticleSystem>();
         part.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
         collisionEvents = new List<ParticleCollisionEvent>();
-		paintColor = Color.yellow;
+		paintColor = new Color(1.0f,0.39f,0.39f);
 		tm = GetComponent<TextMesh> ();
 
 		//partRender = part.GetComponent<ParticleSystemRenderer>();
@@ -45,7 +45,7 @@ public class SprayerCtrl : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.Space) || Input.GetKeyDown (KeyCode.Joystick1Button7)) {
 			isPaint = true;
 		} else if (Input.GetKeyDown (KeyCode.Joystick1Button2) || Input.GetKeyDown(KeyCode.R)) {//x
-			paintColor = Color.red;
+			paintColor = new Color(1.0f,0.39f,0.39f);
 			//partRender.material.color = paintColor;
 			//print (partRender.material.color);
 
@@ -54,19 +54,19 @@ public class SprayerCtrl : MonoBehaviour {
 
 		}
 		else if (Input.GetKeyDown (KeyCode.Joystick1Button3)|| Input.GetKeyDown(KeyCode.Y)) { //y
-			paintColor = Color.yellow;
+			paintColor = new Color(1.0f,1.0f,0.39f);
 			main.startColor = paintColor;
 		}
 		else if (Input.GetKeyDown (KeyCode.Joystick1Button5)|| Input.GetKeyDown(KeyCode.B)) { //b
-			paintColor = Color.blue;
+			paintColor = new Color(0.39f,0.39f,1.0f);
 			main.startColor = paintColor;
 		}
 		else if (Input.GetKeyDown (KeyCode.Joystick1Button10)|| Input.GetKeyDown(KeyCode.G)) {//a
-			paintColor = Color.green;
+			paintColor = new Color(0.39f,1.0f,0.39f);
 			main.startColor = paintColor;
 		}
 		else if (Input.GetKeyDown (KeyCode.Joystick1Button11)|| Input.GetKeyDown(KeyCode.M)) {//=
-			paintColor = Color.magenta;
+			paintColor = new Color(0.79f,0.39f,1.0f);
 			main.startColor = paintColor;
 		}
 		if(isPaint)
